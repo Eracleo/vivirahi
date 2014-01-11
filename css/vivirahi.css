@@ -1,0 +1,569 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	background: rgb(249, 249, 249); /*ccc*/
+	color:#262626;
+	font-size: 1em;
+	font-family: Verdana;
+}
+a {
+cursor: pointer;
+outline: none;
+text-decoration: none;
+}
+a:link,
+a:visited{color: #478EAE;}
+a:hover,
+a:active,
+a.active {color: #06638D;}
+ul {
+color: #787878;
+font-size: 12px;
+margin: 0px;
+padding-left: 20px;
+text-align: left;
+word-wrap: break-word;
+}
+h1, h2, h3, h4 {
+display: block;
+padding: 0;
+margin: 0;
+margin-bottom: 10px;
+font-weight: normal;
+}
+h1 {
+line-height: 30px;
+font-size: 25px;
+font-weight: normal;
+color: #056487;
+}
+h2 {
+font-size: 18px;
+font-weight: normal;
+color: #7f7f7f;
+}
+p.breakcrumb {
+  font-size: 0.7em;
+  margin: 10px 0px;
+}
+.zone{
+  margin:0px auto;
+  width:960px;
+}
+.linea{width: 100%;height: 1px;display: inline-block;}
+ul.menu{
+  margin:0px;
+  padding:0px;
+}
+.obligatorio {
+font-size: 0.65em;
+color: red;
+}
+#wrapper-top,
+#wrapper-menu,
+#wrapper-content,
+#wrapper-footer{
+  height: auto;
+  width: 100%;
+  min-width: 960px;}
+#wrapper-top{
+  border-top:2px solid #3390B9;
+  background: url(../images/bg-top-bar-blue.jpg) repeat-x;
+}
+.zone-top{height: 27px;}
+.zone-top ul.menu {
+display: block;
+width: auto;
+float: right;
+}
+.zone-top ul.menu li {
+list-style: none;
+float: left;
+}
+.zone-top ul.menu li a {
+height: 27px;
+padding: 0 11px;
+display: block;
+color: #FFF;
+text-align: center;
+font-weight: normal;
+line-height: 27px;
+}
+.zone-top ul.menu li:hover a {
+  color:#b5dce5 !important;
+  text-decoration: none;
+}
+#wrapper-menu{
+background: url('../images/bg-top-bar-texture.jpg') repeat-x;
+}
+.zone-menu {
+height: 55px;
+}
+.shadow-menu {
+height: 55px !important;
+box-shadow: 0px 1px 2px #AFACAC;
+-moz-box-shadow: 0px 1px 2px #AFACAC;
+-webkit-box-shadow: 0px 1px 2px #AFACAC;
+-o-box-shadow: 0px 1px 2px #AFACAC;
+margin-bottom: 3px;
+}
+.zone-logo {
+text-align: center;
+display: block;
+float: left;
+width: 204px;
+height: 45px;
+border: 0px;
+}.zone-logo a , .zone-logo img {
+border: 0px;
+
+}
+.zone-main{
+display: block;
+float: left;
+height: /*192px*/auto;
+padding: 0px 0px 0px 0px;
+z-index: 1;
+}
+ul.main {
+margin: 0px;
+padding: 0px;
+border-right: 1px solid rgba(255, 255, 255, 0.1);
+border-left: 1px solid rgba(0, 0, 0, 0.1);
+}
+ul.main > li {
+float: left;
+padding: 0px;
+position: relative;
+display: block;
+cursor: pointer;
+border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+ul.main a {
+border: 1px solid rgba(255, 255, 255, 0.1);
+border-top: none;
+border-bottom: none;
+border-right: none;
+display: block;
+/*text-shadow: 0 1px 0 #000000;*/
+transition: all 0.2s linear 0s;
+font-size: 14px;
+font-weight: bold;
+color: #FFF;
+padding: 0 17px;
+height: 55px;
+line-height: 55px;
+}
+ul.main > li:hover > a,
+ul.main > li:active > a,
+ul.main > li.active > a {
+  text-decoration: none;
+  background: #106388;
+  background: #0F5A7B;
+  border-color: rgba(0, 0, 0, 0.2) !important;
+  color: #FFFFFF !important;
+
+  -moz-box-shadow: 0 8px 8px rgba(0, 0, 0, 0.35) inset !important;
+  -webkit-box-shadow: 0 8px 8px rgba(0, 0, 0, 0.35) inset !important;
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.35) inset !important;
+
+  -moz-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1) inset !important;
+  -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1) inset !important;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1) inset !important;
+  /*IE 7 AND 8 DO NOT SUPPORT BLUR PROPERTY OF SHADOWS*/
+}
+.zone-publicar{
+  float:right;
+  width:50px;
+  height:35;
+}
+.zone-publicar a {
+margin-top: 10px;
+float: right;
+padding: 5px 20px;
+background: rgb(255, 235, 0);
+}
+#wrapper-content{
+  display:inline-block;
+  background:#FFF;/*rgb(249, 249, 249)*/
+}
+.zone-content {
+	min-height: 200px;
+	min-width: 600px;
+	padding: 0px 0px 20px 0px;
+}
+.zone-left{
+  width: 210px;
+  padding:20px 15px;
+  background: #f5f5f5;
+	float: left;}
+.zone-right{
+  padding: 20px 10px;
+  width: 698px;
+  background:#f7f7f7;/*#f9f9f9*/
+	float:right;
+}
+#wrapper-footer{
+border-top: 1px solid #999;}
+.zone-footer{
+width: 960px;
+margin: 30px auto;
+float: none;
+text-align: left;
+color: #585858;
+font-size: 12px;
+position: relative;
+}
+.logo-footer{
+  float: left;
+}
+
+/** 
+* Paginacion
+*/
+#pagina{
+  background: #ccc;
+  padding: 5px 10px;
+  text-align: center;
+}
+#pagina .actual{
+  margin: 1px 5px;
+}
+.detalles .tick{
+  width:165px;
+  margin:5px;
+  padding-left: 30px;
+background: url(../images/tick.jpg) left no-repeat;
+  float:left;
+}
+/**
+* EndPaginacion
+*/
+/**
+* Buscar
+*/
+.capa{
+  background: #000;
+  display:none;
+  height: 100%;
+  min-width: 960px;
+  opacity: 0.2;
+  position: absolute;
+  width: 100%;
+  z-index: 99;
+}
+/**
+* EndBuscar
+*/
+/**
+* Formulario
+*/
+.field {
+padding: 5px 0px;
+border-bottom: 1px solid #f3f3f3;
+}
+.field .item {
+float: left;
+margin-left: 10px;
+min-width: 140px;
+}
+/* Formularios*/
+form.info *{font-size: 12px;}
+form.info h1 {font-size: 25px;}
+form.login{
+    width: 450px;}
+form.user{
+
+}
+form.info fieldset {
+    background: white;
+    border: 1px solid #E1E1E1;/*
+    box-shadow: 0 0 10px #DADADA;
+    -webkit-box-shadow: 0 0 10px #DADADA;
+    -moz-box-shadow: 0 0 10px #DADADA;*/
+    padding: 25px;
+}
+form.info fieldset > div {
+    clear: both;
+    overflow: hidden;
+}
+form.info fieldset div label {
+    display: block;
+    float: left;
+    margin-right: 15px;
+    margin-top: 12px;
+    text-align: right;
+    text-transform: uppercase;
+}
+form.info input[type="text"],
+form.info input[type="password"],
+form.info input[type="file"], 
+form.info input[type="email"], 
+form.info textarea,
+form.info select {
+    background: #F5F5F5;
+    border: 1px solid #E8E8E8;
+    color: #626262;
+    display: block;
+    float: left;
+    padding: 5px;
+    resize: none;
+    -webkit-transition: all 0.1s linear;
+    -moz-transition: all 0.1s linear;
+}
+form.info input[type="text"]:focus,
+form.info textarea:focus,
+form.info select:focus {
+    background: #F9F9F9;
+    border: 1px solid #D3D3D3;
+    outline: none;
+}
+form.info .ultimo{
+    margin-bottom: 0;
+    position: relative;
+    margin-right: 10px;
+}
+form.info button {
+    background: #444444;
+    border: 0 none;
+    color: #FFFFFF;
+    float: right;
+    font-weight: bold;
+    height: 32px;
+    padding: 0 10px;
+    position: relative;
+    text-transform: uppercase;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+}
+form.info button:hover{
+    background: #6A6A6A;
+}
+.error {
+background-color: #BC1010;
+border-radius: 4px 4px 4px 4px;
+color: #FFF;
+font-weight: bold;
+margin-left: 16px;
+margin-top: 6px;
+padding: 6px 12px;
+position: absolute;
+}
+.error:before {
+border-color: rgba(0, 0, 0, 0) #BC1010 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+border-style: solid;
+border-width: 6px 8px;
+content: "";
+display: block;
+height: 0;
+left: -16px;
+position: absolute;
+top: 8px;
+width: 0;
+}
+/* AJAX Gif y mensajes de exito o fracaso */
+.hide{
+    display: none;
+}
+.ajaxgif{
+    position: absolute;
+    right: 150px;
+    top: 5px;
+}
+.msg{
+    color: white;
+    font-weight: bold;
+    height: 32px;
+    line-height: 32px;
+    padding: 0 10px;
+    position: absolute;
+    right: -155px;
+    text-transform: uppercase;
+    min-width: 121px;
+}
+.msg_ok{
+    background: #589D05;
+}
+.msg_error{
+    background: red;
+}
+input[type="submit"], .button, .cancelar {
+background: #E5E5E5;
+display: inline-block;
+margin: 0 6px;
+padding: 7px 20px 7px;
+color: #333;
+text-decoration: none;
+text-shadow: 0 1px 1px #FFF;
+border: 1px solid #CCC;
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+border-radius: 4px;
+background: -webkit-linear-gradient(top, #FEFEFE, #E5E5E5);
+background: -moz-linear-gradient(top, #FEFEFE, #E5E5E5);
+background: -ms-linear-gradient(top, #FEFEFE, #E5E5E5);
+background: linear-gradient(top, #FEFEFE, #E5E5E5);
+-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), inset 0 0 0 1px rgba(255, 255, 255, 0.6), 0 1px 2px rgba(0, 0, 0, 0.1);
+-moz-box-shadow: inset 0 1px 0 rgba(255,255,255, .3), inset 0 0 0 1px rgba(255,255,255, .6), 0 1px 2px rgba(0, 0, 0, .1);
+box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), inset 0 0 0 1px rgba(255, 255, 255, 0.6), 0 1px 2px rgba(0, 0, 0, 0.1);
+-webkit-transition: all ease-in-out .3s;
+-moz-transition: all ease-in-out .3s;
+transition: all ease-in-out .3s;
+}
+/**
+* End Formulario
+*/
+.informacion{
+  float: left;
+  width: 220px;
+}/* 
+* inmueble
+*/
+.inmueble{
+  width: 770px;
+  float: left;
+}
+.inmueble .message{
+  height: auto;
+  width: 750px;
+  margin: 10px 0px;
+  padding: 5px 10px;
+}
+.inmueble .linea{
+  width: 770px;
+  margin: 1px 0px;
+  height: 5px;
+  display: inline-block;
+  border:0px;
+}
+.inmueble .photos{
+  float: left;
+  margin-right: 20px;
+  width: 480px;
+  height: 490px;
+  background: #f1f2f0;
+}
+
+.inmueble .photos .slide{
+  width: 450px;
+  height:350px;
+  background:#ccc;
+  margin: 0px auto;
+  margin-top: 15px;
+}
+.inmueble .photos .thumb{
+  width: 460px;
+  margin: 0px auto;
+  margin-top: 10px;
+}
+.inmueble .photos .thumb img{
+  width: 105px;
+  margin: 1px;
+  border: 1px solid #d2d2d2;
+  padding: 1px;
+  float: left;
+}
+.inmueble .photos .thumb img:hover{
+  border: 1px solid #56764d;
+}
+.inmueble .photos .thumb .more-image {
+float: left;
+padding: 30px 10px;
+font-weight: bold;
+}
+.inmueble .caracteristicas{
+  float: left;
+  width: 250px;
+  background: #f0f0f0;
+  padding: 5px 10px;
+}
+.inmueble .caracteristicas p{
+  margin: 10px 0px;}
+.inmueble .detalles{
+  width: 770px;
+}
+.inmueble .detalles .field{
+  height: auto;
+  width: 750px;
+  background: #f0f0f0;
+  margin: 10px 0px;
+  padding: 5px 10px;
+}
+.inmueble .detalles .mapa{
+  height: 380px;
+  margin-bottom: 20px;
+}
+#mapa{
+width: 745px;
+height: 300px;
+border: thin solid #CCC;
+}
+.inmueble .botones{
+  height: auto;
+  width: 750px;
+  margin: 10px 0px;
+  padding: 5px 10px;
+}
+.informacion{
+  float : right;
+  width: 180px;
+}
+.informacion h2{
+  font-size: 1.1em;
+}
+.informacion .button{
+  width: 180px;
+  margin: 5px auto;
+}
+.button{
+    background:#e5e5e5;
+    display:inline-block;
+    margin:0 6px;
+    padding:7px 20px 7px;
+    color:#333;
+    text-decoration:none;
+    text-shadow: 0 1px 1px #FFF;
+    border:1px solid #ccc;
+
+    /* Bordes redondenados - Border Radius */
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    border-radius:4px;
+
+    /* Fondo Degradado - Background Gradient */
+    background:-webkit-linear-gradient(top, #fefefe, #e5e5e5); /* Chrome 10+ */
+    background:   -moz-linear-gradient(top, #fefefe, #e5e5e5); /* Firefox 3.6+ */
+    background:    -ms-linear-gradient(top, #fefefe, #e5e5e5); /* IE10 */
+    background:        linear-gradient(top, #fefefe, #e5e5e5);
+
+    /* Aplcamos sombras al boton - Box Shadow */
+    -webkit-box-shadow:inset 0 1px 0 rgba(255,255,255, .3), inset 0 0 0 1px rgba(255,255,255, .6), 0 1px 2px rgba(0, 0, 0, .1);
+    -moz-box-shadow:inset 0 1px 0 rgba(255,255,255, .3), inset 0 0 0 1px rgba(255,255,255, .6), 0 1px 2px rgba(0, 0, 0, .1);
+    box-shadow:inset 0 1px 0 rgba(255,255,255, .3), inset 0 0 0 1px rgba(255,255,255, .6), 0 1px 2px rgba(0, 0, 0, .1);
+
+    /* Animacion - Transition */
+    -webkit-transition: all ease-in-out .3s;
+    -moz-transition: all ease-in-out .3s;
+    transition: all ease-in-out .3s;
+}
+
+input[type="submit"]:hover,
+.button:hover{
+  border-color:#adcce2; /* Modificamos el color del borde */
+
+  /* Cambiamos los colores del fondo degradado */
+  background:-webkit-linear-gradient(top, #fefefe, #f1f1f1); /* Chrome 10+ */
+  background:   -moz-linear-gradient(top, #fefefe, #f1f1f1); /* Firefox 3.6+ */
+  background:    -ms-linear-gradient(top, #fefefe, #f1f1f1); /* IE10 */
+  background:        linear-gradient(top, #fefefe, #f1f1f1);
+
+  /* Modificamos las propiedades del Box Shadow para un efecto Glow */
+  -webkit-box-shadow:inset 0 1px 0 rgba(255,255,255, .3), inset 0 0 0 1px rgba(255,255,255, .6), 0 1px 6px rgba(36, 168, 229, .3);
+  -moz-box-shadow:inset 0 1px 0 rgba(251,247,193, .3), inset 0 0 0 1px rgba(251,247,193, .3), 0 1px 6px rgba(36, 168, 229, .3);
+  box-shadow:inset 0 1px 0 rgba(251,247,193, .3), inset 0 0 0 1px rgba(251,247,193, .3), 0 1px 6px rgba(36, 168, 229, .3);
+}
+/* 
+* End inmueble
+*/

@@ -1,0 +1,4 @@
+Campos que faltan en la base de datos
+- Tipo de transaccion
+- Tiempo de vida
+- Tipo de node
